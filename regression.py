@@ -27,3 +27,14 @@ class RidgeRegression(LinearRegression):
         I = np.eye(len(xTx))
         self.theta = np.dot(np.dot(np.linalg.inv(xTx + self.alpha*I), input.T), output)
 
+    # for scikit-learn
+    def get_params(self, deep=True):
+        return {'alpha':self.alpha}
+
+    # (OPTION) the coefficient of determination R^2.
+    # see sklearn.linear_model.Ridge().score()
+    # http://goo.gl/v93tNM
+    def score2(self, input, output):
+        u = ((output - self.predict(input)) ** 2).sum()
+        v = ((output - output.mean()) ** 2).sum()
+        return (1 - u/v)

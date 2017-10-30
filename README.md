@@ -45,3 +45,9 @@ array([ 3.54259714,  0.1817578 ,  2.24085012,  2.68053522])
 
 ## See also
 - [PDF](https://ie.u-ryukyu.ac.jp/~tnal/2017/info4/dm/2017info4dm-w5.pdf), pp.9-30.
+
+<hr>
+
+## Tips
+- cross_validation module on sklearn
+  - /opt/homebrew/var/pyenv/versions/anaconda3-4.4.0/lib/python3.6/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
