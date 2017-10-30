@@ -44,4 +44,4 @@ array([ 3.54259714,  0.1817578 ,  2.24085012,  2.68053522])
 ```
 
 ## See also
-- [PDF](https://ie.u-ryukyu.ac.jp/~tnal/2017/info4/dm/2017info4dm-w4.pdf), pp.18-33.
+- [PDF](https://ie.u-ryukyu.ac.jp/~tnal/2017/info4/dm/2017info4dm-w5.pdf), pp.9-30.
