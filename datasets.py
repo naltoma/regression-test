@@ -14,3 +14,8 @@ def polynominal2_features(input):
     poly2 = input[:,1:]**2
     return np.c_[input, poly2]
 
+def polynominal3_features(input):
+    poly2 = input[:,1:]**2
+    poly3 = input[:,1:]**3
+    return np.c_[input, poly2, poly3]
+
