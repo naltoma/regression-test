@@ -12,12 +12,12 @@ class LinearRegression:
         if self.theta == None:
             self.theta = np.zeros(x.shape[1])
         for i in range(epochs):
-            error = y - self.predict(x)
+            error = self.predict(x) - y
             if sum(abs(error)) < eta:
                 break
             temp_theta0 = self.theta[0] - alpha * (-1/len(x)) * sum(error)
             #temp_theta1 = self.theta[1] - alpha * (-1/len(x)) * sum(np.dot(x.T, error))
-            temp_thetax = self.theta - alpha * (-1/len(x)) * sum(np.dot(x.T, error))
+            temp_thetax = self.theta - alpha * (1/len(x)) * sum(np.dot(x.T, error))
             self.theta = temp_thetax
             self.theta[0] = temp_theta0
             #self.theta[1] = temp_theta1
